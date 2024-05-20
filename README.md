@@ -6,40 +6,40 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Load the CSV into a DataFrame.
+Load the file you want read
 
 ### Step 2: 
-Print the number of contents to be displayed using df.head()
+Open the file in read mode
  
 ### Step 3: 
-The number of rows returned is defined in Pandas option settings
+Use the built in function copy()
 
 ### Step 4: 
-Check your system's maximum column with the pd.options.display.max_column statement
+Write the copied file
 
 ### Step 5: 
-Increase the maximum number of rows to display the entire DataFrame
+The File is read and copied.
 
 ### Step 6: 
 End the program
 
 ## PROGRAM:
 ```
-#To write a python program for reading content from a CSV file.
 #Developed by: Vikaash P
 #Register Number: 212223240180
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
-
+with open("text1.txt",'r') as file:
+    msg=file.read()
+with open("copy.txt","w") as file2:
+    file2.write(msg)
 ```
 
 ### OUTPUT:
-![image](https://github.com/Vikaash16/Copy-File/assets/139218414/6a8d873b-1722-4326-84df-0319f4381632)
+![image](https://github.com/Vikaash16/Copy-File/assets/139218414/7deedf72-970b-4220-a182-0175125f22c2)
+
+![image](https://github.com/Vikaash16/Copy-File/assets/139218414/7c041076-24cf-4744-8c14-01a75ed67315)
+
+
 
 
 
